@@ -97,16 +97,16 @@ Static roles can be included within standard HTML markup and require no scriptin
 </h3>
 </div>
 
-<div id="application" class="hd" tabindex="-1">
+<div id="<code>application</code>" class="hd" tabindex="-1">
 <h4>
 <span>
-1.1.1: Application Role
+1.1.1: <code>application</code> Role
 </span>
 </h4>
 </div>
 
 <div class="intro tal">
-<table aria-label="application" class="table">
+<table aria-label="<code>application</code>" class="table">
 <tr>
 <th class="col">
 <span><a>Role</a></span>
@@ -127,8 +127,8 @@ Static roles can be included within standard HTML markup and require no scriptin
 
 <tr>
 <td title="Role" class="cell"><!-- Role -->
-<a target="_blank" href="http://www.w3.org/TR/wai-aria-1.1/#application">
-application
+<a target="_blank" href="http://www.w3.org/TR/wai-aria-1.1/#<code>application</code>">
+<code>application</code>
 </a>
 </td>
 <td title="Required Attributes" class="cell"><!-- Required Attributes -->
@@ -151,19 +151,19 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
-Application is a region declared as a web application, as opposed to a web Document.
 
-Use of the Application role informs assistive technologies that keystrokes should be passed through to the control that currently has focus.
+<code>application</code> is a region declared as a web <code>application</code>, as opposed to a web Document.
 
-It's important to note that use of the Application role will forcibly change the browse modality for screen readers such as JAWS and NVDA, so that static text that is not explicitly associated with an active element in the tab order will not generally be perceivable by the non-sighted screen reader user. (Only focusable active elements are perceivable.) Moreover, NVDA will remove an Application region from the standard Virtual Buffer when navigating in Browse Mode, so that its content can only be detected and navigable after focus moves into that region. (All of these behaviors are interpretations of the ARIA spec by these AT venders, and are not specifically documented within the ARIA spec.)
+Use of the <code>application</code> role informs assistive technologies that keystrokes should be passed through to the control that currently has focus.
 
-The Application role is valuable when building composite widgets that have no specific role mapping, where focus must be managed by the widget and not the assistive technology in order to ensure accessibility.
+It's important to note that use of the <code>application</code> role will forcibly change the browse modality for screen readers such as JAWS and NVDA, so that static text that is not explicitly associated with an active element in the tab order will not generally be perceivable by the non-sighted screen reader user. (Only focusable active elements are perceivable.) Moreover, NVDA will remove an <code>application</code> region from the standard Virtual Buffer when navigating in Browse Mode, so that its content can only be detected and navigable after focus moves into that region. (All of these behaviors are interpretations of the ARIA spec by these AT venders, and are not specifically documented within the ARIA spec.)
 
-Caution should always be used when implementing the Application role.
+The <code>application</code> role is valuable when building composite widgets that have no specific role mapping, where focus must be managed by the widget and not the assistive technology in order to ensure accessibility.
+
+Caution should always be used when implementing the <code>application</code> role.
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Date%20Pickers/ARIA%20Date%20Picker%20(Basic)/demo.htm">Basic compound date picker component</a>
-</pre>
+
 </td>
 </tr>
 
@@ -224,9 +224,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Banner is a region that contains mostly site-oriented content, rather than page-specific content.
-</pre>
+
 </td>
 </tr>
 
@@ -287,9 +287,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Complementary is a supporting section of the document, designed to be complementary to the main content at a similar level in the DOM hierarchy, but remains meaningful when separated from the main content.
-</pre>
+
 </td>
 </tr>
 
@@ -350,9 +350,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Contentinfo is a large perceivable region that contains information about the parent document.
-</pre>
+
 </td>
 </tr>
 
@@ -413,9 +413,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Form is a landmark region that contains a collection of items and objects that, as a whole, combine to create a form.
-</pre>
+
 </td>
 </tr>
 
@@ -476,9 +476,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Main is the main content of a document.
-</pre>
+
 </td>
 </tr>
 
@@ -539,9 +539,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Navigation is a collection of navigational  elements for navigating the document or related documents.
-</pre>
+
 </td>
 </tr>
 
@@ -602,11 +602,11 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Region is a perceivable section containing content that is relevant to a specific, author-specified  purpose and sufficiently important that users will likely want to be able to navigate to the section easily.
 
 An element that includes role="region" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time, however one or the other is required)
-</pre>
+
 </td>
 </tr>
 
@@ -667,9 +667,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Search is a landmark region that contains a collection of items and objects that, as a whole, combine to create a search facility.
-</pre>
+
 </td>
 </tr>
 
@@ -738,9 +738,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Article is a section of a page that consists of a composition that forms an independent part of a document, page, or site.
-</pre>
+
 </td>
 </tr>
 
@@ -796,11 +796,11 @@ aria-labelledby
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Definition is a definition of a term or concept.
 
 The role="definition" element must include an aria-labelledby attribute that references the ID of the term or concept being defined.
-</pre>
+
 </td>
 </tr>
 
@@ -861,13 +861,13 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Directory is a list of references to members of a group, such as a static table of contents.
 
 The Directory role is related to the List role, and must include child elements with role="listitem".
 
 Directory is a structural equivalent to an HTML ul element.
-</pre>
+
 </td>
 </tr>
 
@@ -885,13 +885,13 @@ listitem
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Listitem is a single item in a Directory.
 
 Listitem elements are required as children of role="directory".
 
 Listitem is a structural equivalent to the li element in an HTML ul element.
-</pre>
+
 </td>
 </tr>
 
@@ -952,9 +952,9 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
-Document is a region containing related information that is declared as document content, as opposed to a web Application.
-</pre>
+
+Document is a region containing related information that is declared as document content, as opposed to a web <code>application</code>.
+
 </td>
 </tr>
 
@@ -1010,13 +1010,13 @@ aria-level
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Heading is a heading for a section of the page.
 
 The aria-level attribute must be set on the role="heading" element to preserve an orderly document structure.
 
 If omitted, the implicit value of aria-level will be set to 2 upon Heading within the accessibility tree.
-</pre>
+
 </td>
 </tr>
 
@@ -1077,11 +1077,11 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Img is a container for a collection of elements that form an image.
 
 An element that includes role="img" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
-</pre>
+
 </td>
 </tr>
 
@@ -1142,13 +1142,13 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 List is a group of non-interactive list items.
 
 The List role must include child elements with role="listitem".
 
 List is a structural equivalent to an HTML ul element.
-</pre>
+
 </td>
 </tr>
 
@@ -1166,13 +1166,13 @@ listitem
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Listitem is a single item in a List.
 
 Listitem elements are required as children of role="list".
 
 Listitem is a structural equivalent to the li element in an HTML ul element.
-</pre>
+
 </td>
 </tr>
 
@@ -1233,11 +1233,11 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Math is content that represents a mathematical expression.
 
 An element that includes role="math" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
-</pre>
+
 </td>
 </tr>
 
@@ -1298,11 +1298,11 @@ aria-label
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Note is a section whose content is parenthetic or ancillary to the main content of the resource.
 
 (A comment or explanation of something)
-</pre>
+
 </td>
 </tr>
 
@@ -1358,11 +1358,11 @@ aria-orientation
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Separator is a divider that separates and distinguishes sections of content.
 
 If not set to "vertical", elements with the role Separator have an implicit aria-orientation value of "horizontal".
-</pre>
+
 </td>
 </tr>
 
@@ -1443,7 +1443,7 @@ aria-describedby
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Table is a section containing data arranged in rows and columns in the same manner as an HTML table element.
 
 The Table role is intended for tabular containers which are not interactive.
@@ -1451,7 +1451,7 @@ The Table role is intended for tabular containers which are not interactive.
 The Table role must include child elements with role="rowgroup" or role="row".
 
 In cases where the nesting structure of Table and its child roles may be convoluted, or when a Table may include nested Tables or additional markup structures, aria-owns must be used on the role="table" element to reference all of the IDs of the first child role; which would be role="rowgroup" if present, or role="row" otherwise.
-</pre>
+
 </td>
 </tr>
 
@@ -1476,7 +1476,7 @@ aria-owns
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 The Rowgroup role establishes a relationship between owned Row elements.
 
 The Rowgroup role must include child elements with role="row".
@@ -1486,7 +1486,7 @@ Rowgroup is a structural equivalent to the thead, tfoot, and tbody elements in a
 In cases where the nesting structure of Rowgroup and its child roles may be convoluted, or when a Rowgroup may include nested  Tables or structural elements, aria-owns must be used on the role="rowgroup" element to reference all of the IDs of the first child role; which would be role="row".
 
 As with thead, tfoot, and tbody within an HTML table element, Rowgroup is an optional role within Table.
-</pre>
+
 </td>
 </tr>
 
@@ -1521,7 +1521,7 @@ aria-rowspan
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 The Row role establishes a relationship between owned Columnheader, Rowheader, and cell elements.
 
 The Row role must include child elements with role="columnheader", role="rowheader", or role="cell".
@@ -1529,7 +1529,7 @@ The Row role must include child elements with role="columnheader", role="rowhead
 Row is a structural equivalent to the tr element in an HTML table element.
 
 In cases where the nesting structure of Row and its child roles may be convoluted, or when a Row may include nested Tables or structural elements, aria-owns must be used on the role="row" element to reference all of the IDs of the first child roles; which would be role="columnheader", role="rowheader", and role="cell".
-</pre>
+
 </td>
 </tr>
 
@@ -1564,13 +1564,13 @@ aria-colspan
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Columnheader is a cell containing header information for a column.
 
 Columnheader is a structural equivalent to the th element in an HTML table element.
 
 If a Columnheader is sortable, the aria-sort attribute must be set appropriately on the role="columnheader" element.
-</pre>
+
 </td>
 </tr>
 
@@ -1605,13 +1605,13 @@ aria-colspan
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Rowheader is a cell containing header information for a Row.
 
 Rowheader is a structural equivalent to the th element in an HTML table element.
 
 If a Rowheader is sortable, the aria-sort attribute must be set appropriately on the role="rowheader" element.
-</pre>
+
 </td>
 </tr>
 
@@ -1646,13 +1646,13 @@ aria-describedby
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Cell is a cell containing data within a Row.
 
 Cell is a structural equivalent to the td element in an HTML table element.
 
 If a Cell includes associated Columnheader or Rowheader elements within the Table, then aria-describedby must be set on the role="cell" element in order to explicitly reference the IDs of one or both role="columnheader" and role="rowheader" elements if present.
-</pre>
+
 </td>
 </tr>
 
@@ -1723,7 +1723,7 @@ aria-activedescendant
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Toolbar is a collection of commonly used function buttons or controls represented in compact visual form.
 
 If not set to "vertical", elements with the role Toolbar have an implicit aria-orientation value of "horizontal".
@@ -1731,7 +1731,7 @@ If not set to "vertical", elements with the role Toolbar have an implicit aria-o
 Typically no scripting is needed for the Toolbar role, since focus will follow the native tab order of the active elements contained within the Toolbar container.
 
 However, if the Toolbar container receives focus, the focusable element must be the same that includes the role="toolbar" attribute, and <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#focus_activedescendant">aria-activedescendant managed focus</a> must be used to reference the ID of the selected active element roles without moving focus.
-</pre>
+
 </td>
 </tr>
 
@@ -1788,7 +1788,7 @@ none
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 None is an element whose implicit native role semantics will not be mapped to the accessibility API.
 
 The None role was introduced in ARIA 1.1, and is a synonym of the Presentation role; both literally do the same thing.
@@ -1798,7 +1798,7 @@ The None role causes a given element to be treated as having no role or to be re
 Important, when role="none" is applied to the parent container of a structured element collection, such as an HTML table element, all of its structural child roles will be removed, including its tr, th, and td elements. However, if the HTML td element includes another HTML table element, the embedded table structure will not be removed.
 
 Since the None role significantly changes the structure of the accessibility tree, role="none" should always be used with caution.
-</pre>
+
 </td>
 </tr>
 
@@ -1847,7 +1847,7 @@ presentation
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Presentation is an element whose implicit native role semantics will not be mapped to the accessibility API.
 
 The Presentation role was introduced in ARIA 1.0, and is a synonym of the None role; both literally do the same thing.
@@ -1857,7 +1857,7 @@ The Presentation role causes a given element to be treated as having no role or 
 Important, when role="presentation" is applied to the parent container of a structured element collection, such as an HTML table element, all of its structural child roles will be removed, including its tr, th, and td elements. However, if the HTML td element includes another HTML table element, the embedded table structure will not be removed.
 
 Since the Presentation role significantly changes the structure of the accessibility tree, role="presentation" should always be used with caution.
-</pre>
+
 </td>
 </tr>
 
@@ -1906,7 +1906,7 @@ text
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Text is an element whose entire subtree should be exposed to accessibility APIs as plain text.
 
 The Text role allows authors to mark an element and all of its subtree contents as plain text.
@@ -1914,7 +1914,7 @@ The Text role allows authors to mark an element and all of its subtree contents 
 Unlike the None and Presentation roles, role="text" removes the accessibility tree structures of all embedded HTML markup.
 
 For this reason, the Text role should never be used on a container element that includes active elements.
-</pre>
+
 </td>
 </tr>
 
@@ -2009,7 +2009,7 @@ aria-modal
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Alertdialog is a type of dialog that contains an alert message, where initial focus goes to an element within the dialog.
 
 The container that includes role="alertdialog" must also include a valid label via aria-label or aria-labelledby, as well as aria-describedby to point to the message body for the Alertdialog text.
@@ -2019,7 +2019,7 @@ When rendered, programmatic focus should then be set to an appropriate element w
 If the Alertdialog is meant to be modal, aria-modal="true" must be set on the container that contains role="alertdialog".
 
 An Alertdialog must include a keyboard accessible active element for closing it, which must also include an accessible label for non-sighted users.
-</pre>
+
 </td>
 </tr>
 
@@ -2092,7 +2092,7 @@ aria-modal
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Dialog is a descendant window of the primary window, where initial focus goes to an element within the dialog.
 
 The container that includes role="dialog" must also include a valid label via aria-label or aria-labelledby, as well as aria-describedby to point to the message body for the Dialog text.
@@ -2104,7 +2104,7 @@ If the Dialog is meant to be modal, aria-modal="true" must be set on the contain
 An Dialog must include a keyboard accessible active element for closing it, which must also include an accessible label for non-sighted users.
 
 If the Dialog is opened using a triggering element, programmatic focus should be set back to the triggering element after the Dialog is closed.
-</pre>
+
 </td>
 </tr>
 
@@ -2178,12 +2178,12 @@ aria-relevant
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Alert is a type of live region with important, and usually time-sensitive, information.
 
 Implicit live region property values: aria-live="assertive" aria-atomic="true" aria-relevant="additions text"
 
-The Alert role is the most aggressive form of live region, and typically fires a system alert event within the platform Accessibility API so that the message will be conveyed to the user no matter which application has focus. (This will typically interrupt speech output for screen reader users.)
+The Alert role is the most aggressive form of live region, and typically fires a system alert event within the platform Accessibility API so that the message will be conveyed to the user no matter which <code>application</code> has focus. (This will typically interrupt speech output for screen reader users.)
 
 Any text or DOM nodes programmatically added to a role="alert" container element will cause the OS alert event to fire.
 
@@ -2194,7 +2194,7 @@ If a role="alert" container element is programmatically added to the DOM using e
 Important, if the role="alert" attribute is removed and the implicit aria-live, aria-atomic, and aria-relevant property values are used instead, an OS alert event will not fire.
 
 A container element that includes role="alert" should not be focusable, nor treated as an interactive widget.
-</pre>
+
 </td>
 </tr>
 
@@ -2270,11 +2270,11 @@ aria-relevant
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Log is a type of live region where new information is added in meaningful order and old information may disappear.
 
 Implicit live region property values: aria-live="polite" aria-atomic="false" aria-relevant="additions text"
-</pre>
+
 </td>
 </tr>
 
@@ -2350,13 +2350,13 @@ aria-relevant
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Marquee is a type of live region where non-essential information changes frequently.
 
 Implicit live region property values: aria-live="off" aria-atomic="false" aria-relevant="additions text"
 
 A container element that includes role="marquee" should not be focusable, nor treated as an interactive widget.
-</pre>
+
 </td>
 </tr>
 
@@ -2432,13 +2432,13 @@ aria-relevant
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Status is a type of live region whose content is advisory information for the user but is not important enough to justify an alert, often but not necessarily presented as a status bar.
 
 Implicit live region property values: aria-live="polite" aria-atomic="false" aria-relevant="additions text"
 
 A container element that includes role="status" should not be focusable, nor treated as an interactive widget.
-</pre>
+
 </td>
 </tr>
 
@@ -2514,13 +2514,13 @@ aria-relevant
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Timer is a type of live region containing a numerical counter which indicates an amount of elapsed time from a start point, or the time remaining until an end point.
 
 Implicit live region property values: aria-live="off" aria-atomic="false" aria-relevant="additions text"
 
 A container element that includes role="timer" should not be focusable, nor treated as an interactive widget.
-</pre>
+
 </td>
 </tr>
 
@@ -2623,7 +2623,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Button is an input that allows for user-triggered actions when clicked or pressed.
 
 An element that includes role="button" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -2640,13 +2640,13 @@ If the Button opens an attached Menu, aria-haspopup="true" must be set on the ro
 
 If the Button opens a Menu when Left clicked, the Enter, Space, and Downarrow keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well.
 
-However, if the Button performs one action when Left clicked, but opens a Menu when Right clicked, the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+However, if the Button performs one action when Left clicked, but opens a Menu when Right clicked, the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demos:
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Toggles,%20Checkboxes,%20Links,%20and%20Buttons/ARIA%20Links%20and%20Buttons/demo.htm">Simulated Button controls with role="button"</a>
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Menus/Vertical%20(Internal%20Content)/demo.htm">Standard Button with aria-haspopup="true" to open a Menu</a>
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20and%20Non-ARIA%20Accordions/ARIA%20Accordion%20(Internal%20Content)/demo.htm">Simulated Toggle Button controls with role="button" and aria-pressed</a>
-</pre>
+
 </td>
 </tr>
 
@@ -2729,7 +2729,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Checkbox is a checkable input that has three possible values: "true", "false", or "mixed".
 
 An element that includes role="checkbox" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -2744,10 +2744,10 @@ Since an HTML input+type="checkbox" element does not support checked="mixed", th
 
 If the Checkbox is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="checkbox".
 
-If the Checkbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="checkbox" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Checkbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="checkbox" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Toggles,%20Checkboxes,%20Links,%20and%20Buttons/ARIA%20Checkboxes/demo.htm">Simulated Checkbox with role="checkbox" and aria-checked</a>
-</pre>
+
 </td>
 </tr>
 
@@ -2823,7 +2823,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Link is an interactive reference to an internal or external resource that, when activated, causes the user agent to navigate to that resource.
 
 An element that includes role="link" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -2838,8 +2838,8 @@ If the Link opens an attached Menu, aria-haspopup="true" must be set on the role
 
 If the Link opens a Menu when Left clicked, role="link" should be changed to role="button", the Enter, Space, and Downarrow keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well.
 
-However, if the Link performs one action when Left clicked, but opens a Menu when Right clicked, the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+However, if the Link performs one action when Left clicked, but opens a Menu when Right clicked, the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -2925,7 +2925,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Progressbar is an element that displays the progress status for tasks that take a long time.
 
 Elements with the role Progressbar have an implicit aria-readonly value of "true".
@@ -2939,7 +2939,7 @@ The aria-valuetext attribute can be used to convey a custom textual string to as
 A container element that includes role="progressbar" does not need to be focusable, nor treated as an interactive widget.
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/Progress%20Bars/Progress%20Bar%20(Dynamic%20Fixed%20Container%20with%20Trigger)/demo.htm">Basic Popup Progress control with polyfill</a>
-</pre>
+
 </td>
 </tr>
 
@@ -3035,7 +3035,7 @@ aria-invalid
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Searchbox is a type of textbox intended for specifying search criteria.
 
 An element that includes role="searchbox" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -3046,8 +3046,8 @@ The focusable element must be the same that includes the role="searchbox" attrib
 
 If the Searchbox is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="searchbox".
 
-If the Searchbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="searchbox" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Searchbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="searchbox" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -3155,7 +3155,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Scrollbar is a graphical object that controls the scrolling of content within a viewing area, regardless of whether the content is fully displayed within the viewing area.
 
 Elements with the role Scrollbar have an implicit aria-orientation value of "vertical".
@@ -3176,8 +3176,8 @@ The aria-controls attribute must be set on the element that includes role="scrol
 
 If the Scrollbar is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="scrollbar".
 
-If the Scrollbar has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="scrollbar" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Scrollbar has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="scrollbar" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -3280,7 +3280,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Slider is a user input where the user selects a value from within a given range.
 
 Elements with the role Slider have an implicit aria-orientation value of "horizontal".
@@ -3299,12 +3299,12 @@ The aria-valuetext attribute can be used to convey a custom textual string to as
 
 If the Slider is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="slider".
 
-If the Slider has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="slider" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Slider has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="slider" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demos:
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Sliders/Horizontal/demo.htm">Horizontal ARIA Slider</a>
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Sliders/Vertical/demo.htm">Vertical ARIA Slider</a>
-</pre>
+
 </td>
 </tr>
 
@@ -3417,7 +3417,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Spinbutton is a form of range that expects the user to select from among discrete choices.
 
 An element that includes role="spinbutton" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -3434,12 +3434,12 @@ The aria-valuetext attribute can be used to convey a custom textual string to as
 
 If the Spinbutton is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="spinbutton".
 
-If the Spinbutton has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="spinbutton" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Spinbutton has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="spinbutton" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Progressive enhancement and responsive design considerations:
 
 In order to ensure accessibility on touch screen devices, an associated plus (+) and minus (-) Button should be implemented using onClick() to increment and decrement the Spinbutton accordingly, which must be perceivable by assistive technologies.
-</pre>
+
 </td>
 </tr>
 
@@ -3522,7 +3522,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Switch is a type of Checkbox that represents on/off values, as opposed to checked/unchecked values.
 
 An element that includes role="switch" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -3535,8 +3535,8 @@ The aria-checked attribute must be included on the same element that includes ro
 
 If the Switch is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="switch".
 
-If the Switch has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="switch" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Switch has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="switch" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -3637,7 +3637,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Textbox is a type of input that allows free-form text as its value.
 
 An element that includes role="textbox" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -3648,10 +3648,10 @@ The focusable element must be the same that includes the role="textbox" attribut
 
 If the Textbox is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="textbox".
 
-If the Textbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="textbox" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Textbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="textbox" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Menus/Variation%20Simulated%20Edit%20With%20Right%20Click/demo.htm">Simulated ARIA Textbox</a>
-</pre>
+
 </td>
 </tr>
 
@@ -3707,7 +3707,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Tooltip is a contextual popup that displays a description for an element.
 
 An element that includes role="tooltip" should not be focusable.
@@ -3725,7 +3725,7 @@ When the mouse moves away from the triggering element, or when the triggering el
 If the aria-describedby attribute is programmatically changed on the triggering element while it still has focus, a description_changed event will fire so that assistive technologies can convey the new Tooltip information appropriately.
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/Tooltips/Tooltip%20(Internal%20Content)/demo.htm">Simple Tooltip</a>
-</pre>
+
 </td>
 </tr>
 
@@ -3841,7 +3841,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Combobox is a presentation of a select; usually similar to a Textbox where users can type ahead to select an option, or type to enter arbitrary text as a new item in the list.
 
 An element that includes role="combobox" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -3871,7 +3871,7 @@ If the role="combobox" field is editable, and it includes the use of aria-active
 Live demos:
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Comboboxes/ARIA%20Comboboxes%20(Native%20Inputs,%20Editable%20with%20Substring%20Match)/demo.htm">Substring Editable Combobox with aria-activedescendant</a>
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Comboboxes/ARIA%20Comboboxes%20(Simulated,%20Readonly)/demo.htm">Startstring Readonly Combobox with aria-activedescendant</a>
-</pre>
+
 </td>
 </tr>
 
@@ -3911,7 +3911,7 @@ aria-owns
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Listbox is a widget that allows the user to select one or more items from a list of Options.
 
 The Listbox role must include child elements with role="option".
@@ -3923,7 +3923,7 @@ Listbox is a structural equivalent to an HTML select element.
 If aria-autocomplete is null or set to "none" on the element that includes role="combobox", and the Listbox container receives focus, the focusable element must be the same that includes the role="listbox" attribute, and <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#focus_activedescendant">aria-activedescendant managed focus</a> must be used to reference the ID of the selected role="option" elements without moving focus. If instead <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#visualfocus">roving tabindex</a> is used to manage focus between role="option" elements, the aria-activedescendant attribute should not be included.
 
 If focus is moved to and managed by the Listbox or its child Options, then the widget as a whole must have only one tab stop.
-</pre>
+
 </td>
 </tr>
 
@@ -3965,7 +3965,7 @@ aria-checked
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Option is a selectable item in a Listbox.
 
 Option is a structural equivalent to an HTML option element.
@@ -3975,7 +3975,7 @@ An element that includes role="option" must have an explicit label in accordance
 If aria-autocomplete is null or set to "none" on the element that includes role="combobox", and if focus is moved to the Listbox child element that includes role="option" when opened, then <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#visualfocus">roving tabindex</a> must be used to manage focus.
 
 Though unlikely that the checked state will be needed, the aria-checked attribute is supported upon role="option" elements, and may be useful within readonly Combobox controls where the Spacebar can be used to check multiple Options.
-</pre>
+
 </td>
 </tr>
 
@@ -4086,7 +4086,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Grid is an interactive control which contains cells of tabular data arranged in rows and columns, like a table.
 
 The Grid role must include child elements with role="rowgroup" or role="row".
@@ -4103,10 +4103,10 @@ If instead <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#vis
 
 If the Grid is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="grid".
 
-If the Grid has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="grid" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Grid has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="grid" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Data%20Grids/ARIA%20Data%20Grid%20(Dynamic)/demo.htm">Dynamic Interactive Grid</a>
-</pre>
+
 </td>
 </tr>
 
@@ -4161,7 +4161,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 The Rowgroup role establishes a relationship between owned Row elements.
 
 The Rowgroup role must include child elements with role="row".
@@ -4178,10 +4178,10 @@ If instead <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#vis
 
 If the Rowgroup is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="rowgroup".
 
-If the Rowgroup has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="rowgroup" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Rowgroup has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="rowgroup" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 As with thead, tfoot, and tbody within an HTML table element, Rowgroup is an optional role within Grid.
-</pre>
+
 </td>
 </tr>
 
@@ -4251,7 +4251,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 The Row role establishes a relationship between owned Columnheader, Rowheader, and Gridcell elements.
 
 The Row role must include child elements with role="columnheader", role="rowheader", or role="gridcell".
@@ -4270,8 +4270,8 @@ If a Row is selectable, aria-selected must be toggled accordingly between "true"
 
 If the Row is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="row".
 
-If the Row has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="row" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Row has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="row" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -4351,7 +4351,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Columnheader is a cell containing header information for a column.
 
 Columnheader is a structural equivalent to the th element in an HTML table element.
@@ -4366,8 +4366,8 @@ The aria-readonly attribute may be used to individually override the default set
 
 If the Columnheader is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="columnheader".
 
-If the Columnheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="columnheader" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Columnheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="columnheader" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -4447,7 +4447,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Rowheader is a cell containing header information for a Row.
 
 Rowheader is a structural equivalent to the th element in an HTML table element.
@@ -4462,8 +4462,8 @@ The aria-readonly attribute may be used to individually override the default set
 
 If the Rowheader is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="rowheader".
 
-If the Rowheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="rowheader" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Rowheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="rowheader" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -4538,7 +4538,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Gridcell is a cell containing data within a Row.
 
 Gridcell is a structural equivalent to the td element in an HTML table element.
@@ -4553,8 +4553,8 @@ The aria-readonly attribute may be used to individually override the default set
 
 If the Gridcell is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="gridcell".
 
-If the Gridcell has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="gridcell" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Gridcell has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="gridcell" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -4650,7 +4650,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Listbox is a widget that allows the user to select one or more items from a list of Options.
 
 The Listbox role must include child elements with role="option".
@@ -4671,12 +4671,12 @@ If the Listbox is disabled, the aria-disabled attribute can be used to reflect t
 
 If the Listbox includes multiselectable Options, aria-multiselectable="true" must be set on the role="listbox" element.
 
-If the Listbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="listbox" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Listbox has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="listbox" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demos:
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Listboxes/Standard/demo.htm">Basic ARIA Listbox</a>
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Listboxes/Multiselect/demo.htm">Multiselect ARIA Listbox</a>
-</pre>
+
 </td>
 </tr>
 
@@ -4743,7 +4743,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Option is a selectable item in a Listbox.
 
 Option is a structural equivalent to an HTML option element.
@@ -4760,8 +4760,8 @@ If aria-multiselectable is set to "true" within Listbox, the aria-selected attri
 
 The aria-checked attribute may be used on Option elements to convey a checkable state that is separate from focus or selection, which can be toggled between "true", "false", or "mixed" when activated. The aria-multiselectable attribute should be null or set to "false" on Listbox when using aria-checked, and the Spacebar key should be used to toggle the checked state using the keyboard, and onClick() should be used to toggle the checked state for mouse and touch screen devices.
 
-If the Option has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="option" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Option has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="option" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -4842,10 +4842,10 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menu is a type of widget that offers a list of choices to the user.
 
-A Menu is often a list of common actions or functions that the user can invoke. The Menu role is appropriate when a list of menu items is presented in a manner similar to a menu on a desktop application.
+A Menu is often a list of common actions or functions that the user can invoke. The Menu role is appropriate when a list of menu items is presented in a manner similar to a menu on a desktop <code>application</code>.
 
 The Menu role must include child elements with role="menuitem", role="menuitemcheckbox", or role="menuitemradio".
 
@@ -4874,7 +4874,7 @@ Live demos:
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Menus/Variation%20Simulated%20Edit%20With%20Right%20Click/demo.htm">Right click Menu from ARIA Textbox</a>
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Menus/Variation%20ARIA%20Tabs%20With%20Right%20Click/demo.htm">Right click Menu from ARIA Tab</a>
 <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Menus/Variation%20ARIA%20Tree%20With%20Right%20Click/demo.htm">Right click Menu from ARIA Tree</a>
-</pre>
+
 </td>
 </tr>
 
@@ -4929,7 +4929,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menuitem is an option in a set of choices contained by a Menu.
 
 An element that includes role="menuitem" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -4939,7 +4939,7 @@ If focus is moved to the Menu child element that includes role="menuitem", then 
 If the Menuitem is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="menuitem".
 
 If the Menuitem opens an attached Menu, aria-haspopup="true" must be set on the role="menuitem" element, and onClick() should be configured on the Menuitem to open the attached Menu. When aria-orientation upon Menu is set to "vertical", the Right arrow and Enter keys should perform the same action as onClick(), or when set to "horizontal", the Down arrow and Enter keys should perform the same action as onClick() instead.
-</pre>
+
 </td>
 </tr>
 
@@ -4996,7 +4996,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menuitemcheckbox is a Menuitem with a checkable state whose possible values are "true", "false", or "mixed".
 
 An element that includes role="menuitemcheckbox" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -5006,7 +5006,7 @@ If focus is moved to the Menu child element that includes role="menuitemcheckbox
 If the Menuitemcheckbox is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="menuitemcheckbox".
 
 The aria-checked attribute must be included on the same element that includes role="menuitemcheckbox" to reflect the checked state of the Menuitemcheckbox, and must be programmatically updated appropriately between "true", "false", or "mixed".
-</pre>
+
 </td>
 </tr>
 
@@ -5063,7 +5063,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menuitemradio is a checkable Menuitem in a set of elements with the same role, only one of which can be checked at a time.
 
 An element that includes role="menuitemradio" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -5075,7 +5075,7 @@ If the Menuitemradio is disabled, the aria-disabled attribute can be used to ref
 The aria-checked attribute must be included on the same element that includes role="menuitemradio" to reflect the checked state of the Menuitemradio, and must be programmatically updated appropriately between "true" or "false".
 
 Only one Menuitemradio in a group can be checked at the same time. When one item in the group is checked, the previously checked item becomes unchecked (its aria-checked attribute becomes "false").
-</pre>
+
 </td>
 </tr>
 
@@ -5110,13 +5110,13 @@ aria-orientation
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Separator is a visual divider that separates and distinguishes groups of Menuitems.
 
 Elements with the role Separator have an implicit aria-orientation value of "horizontal".
 
 If a Menu includes a Separator role, the Separator ID should not be referenced by aria-owns or aria-activedescendant, nor should it be made focusable using roving tabindex.
-</pre>
+
 </td>
 </tr>
 
@@ -5197,10 +5197,10 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menubar is a presentation of Menu that usually remains visible and is usually presented horizontally.
 
-The Menubar role is used to create a menu bar similar to those found in Windows, Mac, and Gnome desktop applications. A menu bar is used to create a consistent set of frequently used commands. Authors SHOULD ensure that menubar interaction is similar to the typical menu bar interaction in a desktop graphical user interface.
+The Menubar role is used to create a menu bar similar to those found in Windows, Mac, and Gnome desktop <code>application</code>s. A menu bar is used to create a consistent set of frequently used commands. Authors SHOULD ensure that menubar interaction is similar to the typical menu bar interaction in a desktop graphical user interface.
 
 The Menubar role must include child elements with role="menuitem", role="menuitemcheckbox", or role="menuitemradio".
 
@@ -5213,7 +5213,7 @@ If instead <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#vis
 If focus is moved to and managed by the Menubar or its child Menuitems, then the widget as a whole must have only one tab stop.
 
 Elements with the role Menubar have an implicit aria-orientation value of "horizontal".
-</pre>
+
 </td>
 </tr>
 
@@ -5268,7 +5268,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menuitem is an option in a set of choices contained by a Menubar.
 
 An element that includes role="menuitem" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -5278,7 +5278,7 @@ If focus is moved to the Menubar child element that includes role="menuitem", th
 If the Menuitem is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="menuitem".
 
 If the Menuitem opens an attached Menu, aria-haspopup="true" must be set on the role="menuitem" element, and onClick() should be configured on the Menuitem to open the attached Menu. When aria-orientation upon Menubar is set to "horizontal", the Down arrow and Enter keys should perform the same action as onClick(), or when set to "vertical", the Right arrow and Enter keys should perform the same action as onClick() instead.
-</pre>
+
 </td>
 </tr>
 
@@ -5335,7 +5335,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menuitemcheckbox is a Menuitem with a checkable state whose possible values are "true", "false", or "mixed".
 
 An element that includes role="menuitemcheckbox" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -5345,7 +5345,7 @@ If focus is moved to the Menubar child element that includes role="menuitemcheck
 If the Menuitemcheckbox is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="menuitemcheckbox".
 
 The aria-checked attribute must be included on the same element that includes role="menuitemcheckbox" to reflect the checked state of the Menuitemcheckbox, and must be programmatically updated appropriately between "true", "false", or "mixed".
-</pre>
+
 </td>
 </tr>
 
@@ -5402,7 +5402,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Menuitemradio is a checkable Menuitem in a set of elements with the same role, only one of which can be checked at a time.
 
 An element that includes role="menuitemradio" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -5414,7 +5414,7 @@ If the Menuitemradio is disabled, the aria-disabled attribute can be used to ref
 The aria-checked attribute must be included on the same element that includes role="menuitemradio" to reflect the checked state of the Menuitemradio, and must be programmatically updated appropriately between "true" or "false".
 
 Only one Menuitemradio in a group can be checked at the same time. When one item in the group is checked, the previously checked item becomes unchecked (its aria-checked attribute becomes "false").
-</pre>
+
 </td>
 </tr>
 
@@ -5449,13 +5449,13 @@ aria-orientation
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Separator is a visual divider that separates and distinguishes groups of Menuitems.
 
 Elements with the role Separator have an implicit aria-orientation value of "horizontal".
 
 If a Menubar includes a Separator role, the Separator ID should not be referenced by aria-owns or aria-activedescendant, nor should it be made focusable using roving tabindex.
-</pre>
+
 </td>
 </tr>
 
@@ -5546,7 +5546,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Radiogroup is a group of Radio buttons.
 
 The Radiogroup role must include child elements with role="radio".
@@ -5565,10 +5565,10 @@ If focus is moved to and managed by the Radiogroup or its child Radios, then the
 
 If the Radiogroup is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="radiogroup".
 
-If the Radiogroup has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="radiogroup" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Radiogroup has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="radiogroup" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Radio%20Buttons/ARIA%20Radio%20Buttons/demo.htm">Simulated ARIA Radios</a>
-</pre>
+
 </td>
 </tr>
 
@@ -5630,7 +5630,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Radio is a checkable input in a group of elements with the same role, only one of which can be checked at a time.
 
 Radio is a structural equivalent to an HTML input with type="radio" element.
@@ -5645,8 +5645,8 @@ The aria-checked attribute must be included on the same element that includes ro
 
 Only one Radio in a Radiogroup can be checked at the same time. When one item in the Radiogroup is checked, the previously checked item becomes unchecked (its aria-checked attribute becomes "false").
 
-If the Radio has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="radio" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Radio has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="radio" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -5747,7 +5747,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Tablist is a list of Tab elements, which are references to Tabpanel elements.
 
 The Tablist role must include child elements with role="tab".
@@ -5766,10 +5766,10 @@ If the Tablist is disabled, the aria-disabled attribute can be used to reflect t
 
 If the Tablist includes multiselectable Tabs, aria-multiselectable="true" must be set on the role="tablist" element.
 
-If the Tablist has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="tablist" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Tablist has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="tablist" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20and%20Non-ARIA%20Tabs/ARIA%20Tabs%20(Internal%20Content)/demo.htm">Simulated ARIA Tabs</a>
-</pre>
+
 </td>
 </tr>
 
@@ -5841,7 +5841,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Tab is a grouping label providing a mechanism for selecting the Tabpanel content that is to be rendered to the user.
 
 An element that includes role="tab" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -5858,8 +5858,8 @@ If aria-multiselectable is set to "true" within Tablist, and focus movement does
 
 The aria-controls attribute should be set on the role="tab" element to reference the ID of the associated Tabpanel container element, even when all Tabs share the same Tabpanel.
 
-If the Tab has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="tab" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Tab has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="tab" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -5894,7 +5894,7 @@ aria-hidden
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Tabpanel is a container for the resources associated with a Tab, where each Tab is contained in a Tablist.
 
 (To ensure an accessible reading order for screen reader users, the Tabpanel element should not be a child of Tablist.)
@@ -5904,7 +5904,7 @@ The aria-labelledby attribute should be set on the role="tabpanel" element to re
 The aria-hidden attribute may be used to show or hide associated Tabpanels.
 
 Only one Tabpanel associated with a Tablist can be expanded at the same time. When one Tabpanel is expanded, the previously expanded Tabpanel becomes collapsed (its aria-hidden attribute becomes "true").
-</pre>
+
 </td>
 </tr>
 
@@ -6005,7 +6005,7 @@ aria-orientation
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Tree is a type of List that may contain sub-level nested Groups that can be collapsed and expanded.
 
 The Tree role must include child elements with role="treeitem", or role="group" when nesting lists of Treeitems in a hierarchy.
@@ -6022,10 +6022,10 @@ If focus is moved to and managed by the Tree or its child Treeitems, then the wi
 
 If the Tree is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="tree".
 
-If the Tree has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="tree" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+If the Tree has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="tree" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
 
 Live demo: <a target="_blank" href="http://whatsock.com/tsg/Coding%20Arena/ARIA%20Menus/Variation%20ARIA%20Tree%20With%20Right%20Click/demo.htm">Simulated ARIA Tree</a>
-</pre>
+
 </td>
 </tr>
 
@@ -6105,7 +6105,7 @@ aria-owns
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Treeitem is an option item of a Tree.
 
 An element that includes role="treeitem" must have an explicit label in accordance with the <a target="_blank" href="http://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te">Text Alternative Computation</a>. (Both aria-labelledby and aria-label should not be used at the same time)
@@ -6126,8 +6126,8 @@ If the Treeitem is a leaf node however, and does not expand or collapse a nested
 
 If the Tree includes nested Groups of Treeitems forming differing levels in a hierarchy, aria-level may be set on each role="treeitem" element to set the correct level for each. (The level for all Treeitems at the same logical level should share the same aria-level attribute value.)
 
-If the Treeitem has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="treeitem" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Treeitem has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="treeitem" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -6182,7 +6182,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Group is a nested list of Treeitems in a Tree that forms a collection of siblings in a hierarchy.
 
 The Group role must include child elements with role="treeitem", or role="group" when nesting lists of Treeitems in a hierarchy.
@@ -6197,8 +6197,8 @@ If instead <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#vis
 
 If the Group is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="group".
 
-If the Group has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="group" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Group has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="group" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -6309,7 +6309,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Treegrid is a Grid whose Rows can be expanded and collapsed in the same manner as for a Tree.
 
 The Treegrid role must include child elements with role="rowgroup" or role="row".
@@ -6326,8 +6326,8 @@ If instead <a target="_blank" href="http://www.w3.org/TR/wai-aria-practices/#vis
 
 If the Treegrid is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="treegrid".
 
-If the Treegrid has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="treegrid" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Treegrid has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="treegrid" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -6362,7 +6362,7 @@ aria-owns
 <a>No</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 The Rowgroup role establishes a relationship between owned Row elements.
 
 The Rowgroup role must include child elements with role="row".
@@ -6374,7 +6374,7 @@ In cases where the nesting structure of Rowgroup and its child roles may be conv
 Elements with role="rowgroup" should not be focusable, nor referenced from Treegrid using aria-activedescendant.
 
 As with thead, tfoot, and tbody within an HTML table element, Rowgroup is an optional role within Grid.
-</pre>
+
 </td>
 </tr>
 
@@ -6454,7 +6454,7 @@ aria-describedby
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 The Row role establishes a relationship between owned Columnheader, Rowheader, and Gridcell elements.
 
 The Row role must include child elements with role="columnheader", role="rowheader", or role="gridcell".
@@ -6481,8 +6481,8 @@ If the Treegrid includes expandable Rows forming differing levels in a hierarchy
 
 If the Row is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="row".
 
-If the Row has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="row" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Row has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="row" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -6562,7 +6562,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Columnheader is a cell containing header information for a column.
 
 Columnheader is a structural equivalent to the th element in an HTML table element.
@@ -6577,8 +6577,8 @@ The aria-readonly attribute may be used to individually override the default set
 
 If the Columnheader is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="columnheader".
 
-If the Columnheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="columnheader" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Columnheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="columnheader" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -6658,7 +6658,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Rowheader is a cell containing header information for a Row.
 
 Rowheader is a structural equivalent to the th element in an HTML table element.
@@ -6673,8 +6673,8 @@ The aria-readonly attribute may be used to individually override the default set
 
 If the Rowheader is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="rowheader".
 
-If the Rowheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="rowheader" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Rowheader has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="rowheader" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
@@ -6749,7 +6749,7 @@ aria-invalid
 <a>Yes</a>
 </td>
 <td title="Implementation Notes" class="notes"><!-- Implementation Notes -->
-<pre>
+
 Gridcell is a cell containing data within a Row.
 
 Gridcell is a structural equivalent to the td element in an HTML table element.
@@ -6764,8 +6764,8 @@ The aria-readonly attribute may be used to individually override the default set
 
 If the Gridcell is disabled, the aria-disabled attribute can be used to reflect the correct state of the element that includes role="gridcell".
 
-If the Gridcell has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="gridcell" element, and the Shift+F10 and Application keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
-</pre>
+If the Gridcell has an attached Menu that opens when Right clicked, aria-haspopup="true" must be set on the role="gridcell" element, and the Shift+F10 and <code>application</code> keystrokes should be configured to open and set focus within the Menu, and a mechanism for doing the same on touch screen devices should be added as well. (The aria-describedby attribute can be used to convey this dual functionality by implementing a Tooltip.)
+
 </td>
 </tr>
 
